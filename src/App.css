@@ -1,6 +1,7 @@
 .app-content{
   padding: 20px;
   background-color: whitesmoke;
+  /* height: 100vh; */
 }
 .logo{
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
@@ -25,9 +26,9 @@
   margin: 30px auto;
 }
 
+
 .blogs{
   padding: 20px;
-
 }
 
 
@@ -99,11 +100,55 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(1, 1, 11, 0.429);
+  background-color: rgba(0, 0, 14, 0.953);
   color: #fff;
   padding: 20px;
 }
 footer span{
   font-size: 16px;
   padding: 10px;
+}
+
+@media only screen and (max-width: 900px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 50% 40%;
+  }
+  .logo h1{
+    font-size: 26px;
+  }
+  .blogs{
+    padding: 12px;
+  }
+  .content{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .highlights{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h-title li{
+    width: 90%;
+    margin: 20px auto;
+    font-size: 19px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 600px){
+  .app-content{
+    padding: 0;
+  }
+
+  .logo {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
