@@ -1,0 +1,110 @@
+.app-content{
+  padding: 20px;
+  background-color: whitesmoke;
+  height: 100vh;
+}
+.logo{
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+.logo h1{
+  font-size: 32px;
+  color: rgb(0, 4, 32);
+  font-weight: 500;
+  padding: 0 0 0 22px;
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 70% 20%;
+  /* grid-template-rows: repeat(7, 70px); */
+  gap: 20px;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.blogs{
+  padding: 20px;
+
+}
+
+
+.highlights{
+  padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* color: #fff; */
+}
+.highlights h3{
+  font-size: 22px;
+  color: orangered;
+  font-weight: 300;
+  margin-bottom: 13px;
+}
+.blog-content{
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transform: scale(.95);
+  transition: transform .3s ease;
+}
+.blog-content:hover{
+  transform: scale(1);
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 500;
+  color: #030111;
+  margin: 10px 0;
+}
+.content{
+  font-size: 17.95px;
+  font-weight: 300;
+  color: #373535;
+  line-height: 1.6;
+  width: 60%;
+}
+.content:after{
+  content: "...";
+  font-size: 20px;
+
+}
+
+.h-title li{
+  list-style: none;
+  font-size: 24px;
+  color: #160d01;
+  margin-bottom: 12px;
+  font-weight: 500;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+li:hover{
+  color: purple;
+  transform: scale(1.05);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(1, 1, 11, 0.429);
+  color: #fff;
+  padding: 20px;
+}
+footer span{
+  font-size: 16px;
+  padding: 10px;
+}
