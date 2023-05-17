@@ -5,12 +5,9 @@ import Highlights from './highlights';
 const App = ({appLogo}) =>{
   
   const date = new Date();
-  const day = date.getDay()
-  const year = date.getFullYear()
-  const month = date.getMonth()
-  const myDate = `${year} / ${month} / ${day}`;
-  console.log(`${year} / ${month} / ${day}`)
-  console.log(myDate)
+let text = date.toString();
+const myDate = text.slice(0, 15);
+  
   return(
     <main className='app-content'>
       <div className="logo"><h1>{appLogo} Billionaire Blogs</h1></div>
